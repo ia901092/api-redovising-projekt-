@@ -5,6 +5,7 @@ body {
   padding: 30px;
   color: #222;
 }
+
 .box {
   background: white;
   max-width: 1000px;
@@ -13,7 +14,62 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
+
 h1 { color: #38003c; margin: 0; font-size: 28px; }
+h2 { color: #38003c; }
+
+.tillbaka {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #38003c;
+  font-weight: bold;
+  text-decoration: none;
+}
+.tillbaka:hover { text-decoration: underline; }
+
+/* HEADER med statistik */
+.header {
+  background: linear-gradient(135deg, #38003c, #5a0061);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 { color: white; }
+
+.info {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.kort {
+  background: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.kort-label {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.kort-tal {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.vinst { color: #00a651; }
+.oavg { color: #999; }
+.forlust { color: #e90052; }
+
+/* Formulär */
 form {
   background: #f4f4f4;
   padding: 15px;
@@ -21,7 +77,12 @@ form {
   border-left: 4px solid #38003c;
   border-radius: 4px;
 }
-label { font-weight: bold; margin-right: 8px; }
+
+label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
 input, select, button {
   padding: 8px 12px;
   margin: 3px;
@@ -29,6 +90,7 @@ input, select, button {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 button {
   background: #38003c;
   color: white;
@@ -36,3 +98,61 @@ button {
   cursor: pointer;
   font-weight: bold;
 }
+
+button:hover { background: #5a0061; }
+
+/* TABELL */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #38003c;
+  color: white;
+  font-size: 14px;
+}
+
+td {
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+td.resultat {
+  font-weight: bold;
+  color: #38003c;
+  text-align: center;
+}
+
+/* Even/odd-färgning */
+tr:nth-child(odd)  { background: #ffffff; }
+tr:nth-child(even) { background: #f5e6f6; }
+
+tr:hover { background: #e9c9eb; }
+
+/* Länkar i tabellen */
+.lank {
+  background: #38003c;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.lank:hover { background: #5a0061; }
+
+a {
+  color: #38003c;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }

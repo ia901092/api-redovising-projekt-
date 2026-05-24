@@ -31,7 +31,7 @@
     echo "<table>";
     echo "<tr><th>📅 Datum</th><th>🏠 Hemma</th><th>✈️ Borta</th><th>⚽ Resultat</th></tr>";
 
-    foreach ($data["matches"] as $m) {  // Iterering genom alla matches
+    foreach ($data["matches"] as $m) {  // Itererin genom alla matches
       $text = strtolower($m["team1"] . " " . $m["team2"]);
       if (strpos($text, strtolower($sok)) === false) continue;  // Sökning: hittar substring (skiftlägesobleroende)
 

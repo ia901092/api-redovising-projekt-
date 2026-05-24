@@ -80,9 +80,8 @@
         echo "</tr>";
       }
     ?>
-      }
-    ?>
-  </table>
+  
+</table>
  
 </div>
 </body>
